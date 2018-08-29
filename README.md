@@ -16,7 +16,7 @@ The tag is up to you, and can be whatever you want to uniquely identify the purp
 
 The advantages are:
   * Ease email filtering based on the recipient (yourname+school@example.com -> school folder, yourname+tag1@example.com -> tag1 folder, ...)
-  * Tracking the source of spams (spam sent to yourname+website1@gmail.com -> very likely that something shaddy happened with website1)
+  * Tracking the source of spams (spam sent to yourname+website1@example.com -> very likely that something shaddy happened with website1)
   * Creation of unique, disposable addresses
 
 Some mail services support this feature (Wikipedia article)[https://en.wikipedia.org/wiki/Email_address#Subaddressing]:
@@ -45,8 +45,9 @@ Otherwise, contacting the website customer support is the only way to get this f
 ## Proposition
 
 While an isolated complain to the customer support is unlikely to change things, I would like to list **here all the websites not accepting email aliases**.
+
 I don't mean to publicly shame them (as they may not even be aware of the issue), 
-but to **offer them the possibility to fix their data validation** to improve their potential customers satisfaction (and accidentally, saving you from cursing when the dreaded **your email is invalid** message appears)
+but to **raise awareness about the pain**, **get them to fix their system** and eventually lowering the overall number of people cursing over Internet every day :)
 
 ## Contributions
 
