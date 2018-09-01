@@ -3,7 +3,13 @@
 ![Wrong email format validator](https://github.com/lpefferkorn/youremailisnotvalid/blob/master/invalid_email.png)
 Your system is wrong, my email is valid!
 
-When you register an account on a website, many refuse perfectly valid emails, denying you the possibility to use email **aliases**
+When you register an account on a website, many refuse perfectly valid emails, denying you the possibility to use email **aliases** or your new fancy **username@domain.coffee** email.
+
+# Possible issues
+
+## 'New' TLDs
+
+With the increase of top-level domains ([as of April 2018, the root domain contains 1543 top-level domains)](https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains) some websites did not keep up, and won't accept your fancy email ending in **@domain.coffee** or **@domain.xyz** despite being perfectly valid
 
 ## Aliases/Subaddressing
 
@@ -31,27 +37,25 @@ Some mail services support this feature (Wikipedia article)[https://en.wikipedia
   * ...
   
 If you handle your own email server/domain this is very likely to work out of the box, depending on your MTA configuration though.
-  
-
-## Issue
-  
+    
+# Root cause
 Validating the format of an email is a [difficult known problem](https://en.wikipedia.org/wiki/Email_address#Validation_and_verification), 
-and often syntactically correct emails using aliases are rejected.
+and often syntactically correct emails are rejected.
 
 One workaround if you host your own email service is to change the delimiter to something more likely to be accepted (with Postfix I changed the [recipient_delimiter](http://www.postfix.org/postconf.5.html#recipient_delimiter)) to **-**, it works pretty well.
 
 Otherwise, contacting the website customer support is the only way to get this fixed.
 
-## Proposition
+# Proposition
 
 While an isolated complain to the customer support is unlikely to change things, I would like to list **here all the websites not accepting email aliases**.
 
 I don't mean to publicly shame them (as they may not even be aware of the issue), 
-but to **raise awareness about the pain**, **get them to fix their system** and eventually lowering the overall number of people cursing over Internet every day :)
+but to **raise awareness about the pain**, **get them to eventually fix their system** and **vent your spleen** :)
 
-## Contributions
+# Contributions
 
-### Websites
+## Websites
 
 Please create a pull request with the following information:
   * Website url
@@ -59,12 +63,15 @@ Please create a pull request with the following information:
   * The format of the email refused
   * Eventually, a screenshot of the relevant part of the form (please don't use *your* email address, but something that matches the reject format like name+tag@example.com)
   
-### Solutions
+# Okay, how should I check the email then?
 
 As I am not a web developer, I have no clue about the possible best solutions to address this problem.
-If you have experience on this matter, I would be very happy if you can share your experience in the **Validation methods** sections.
+If you have experience on this matter, I would be very happy if you can share your experience.
 
 Thank you for trying to make Internet a bit less annoying place :)
+
+* [```<input type="email">```](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email)
+* [The 100% correct way to validate email addresses: send your users an activation email](https://hackernoon.com/the-100-correct-way-to-validate-email-addresses-7c4818f24643)
 
 # Websites refusing valid emails
 
@@ -73,7 +80,3 @@ Thank you for trying to make Internet a bit less annoying place :)
 ![Wrong email format validator](https://github.com/lpefferkorn/youremailisnotvalid/blob/master/forms/oracle.png)
 
 
-# Validation methods
-
-* [```<input type="email">```](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email)
-* [The 100% correct way to validate email addresses: send your users an activation email](https://hackernoon.com/the-100-correct-way-to-validate-email-addresses-7c4818f24643)
