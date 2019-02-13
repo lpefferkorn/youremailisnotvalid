@@ -79,4 +79,7 @@ Thank you for trying to make Internet a bit less annoying place :)
 2018/08/28 ```yourname+tag@example.com```
 ![Wrong email format validator](https://github.com/lpefferkorn/youremailisnotvalid/blob/master/forms/oracle.png)
 
+## AirFrance Android app
+2019/02/13 Cannot update contact details via the app:
+![Wrong email format validator](https://github.com/lpefferkorn/youremailisnotvalid/blob/master/forms/air_france_app.png)
 
