@@ -75,6 +75,27 @@ Thank you for trying to make Internet a bit less annoying place :)
 
 # Websites refusing valid emails
 
+## bouyguestelecom.fr
+2019/03/30 
+During sign up an email with a ```+``` character is accepted, but later not accepted by the sign in form, making follow-up of the subscription process impossible. This is only during the subscription process.
+[Feedback](https://forum.bouyguestelecom.fr/questions/1938138-probleme-lors-inscription-email-comportant-caractere#answer_4475396)
+
+## trans-cote-azur.com
+2019/04/07 Email with a ```+``` considered invalid
+![Wrong email format validator(https://github.com/lpefferkorn/youremailisnotvalid/blob/master/forms/www.trans-cote-azur.com.png)
+
+## Quechoisir.org
+2019/03/20 Email with a ```+``` considered invalid
+![Wrong email format validator](https://github.com/lpefferkorn/youremailisnotvalid/blob/master/forms/quechoisir.org.png)
+
+## Meetup.com
+2019/04/02 Email with a ```+``` considered invalid
+![Wrong email format validator](https://github.com/lpefferkorn/youremailisnotvalid/blob/master/forms/meetup.png)
+
+## Boulanger.com
+2019/04/01 Cannot type an email with a ```+``` character
+![Cannot type + character](https://github.com/lpefferkorn/youremailisnotvalid/blob/master/forms/boulanger.com.png)
+
 ## Oracle.com
 2018/08/28 ```yourname+tag@example.com```
 ![Wrong email format validator](https://github.com/lpefferkorn/youremailisnotvalid/blob/master/forms/oracle.png)
